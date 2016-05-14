@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.tumblr</groupId>
+  <artifactId>jumblr</artifactId>
+  <versioning>
+    <release>0.0.12-SNAPSHOT-BOLD</release>
+    <versions>
+      <version>0.0.12-SNAPSHOT-BOLD</version>
+    </versions>
+    <lastUpdated>20160514010319</lastUpdated>
+  </versioning>
+</metadata>
