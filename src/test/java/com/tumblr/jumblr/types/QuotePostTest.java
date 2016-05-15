@@ -3,11 +3,13 @@ package com.tumblr.jumblr.types;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.tumblr.jumblr.responses.PostDeserializer;
-import java.util.HashMap;
-import java.util.Map;
-import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Tests for Quote Post
@@ -30,7 +32,7 @@ public class QuotePostTest extends TypeTest {
         flat.put("type", "quote");
         flat.put("source", source);
         flat.put("text", text);
-        flat.put("author", author);
+        flat.put("post_author", author);
         flat.put("slug", slug);
         flat.put("notes", notes);
         flat.put("note_count", 123);
@@ -42,7 +44,7 @@ public class QuotePostTest extends TypeTest {
     public void testReaders() {
         assertEquals(source, post.getSource());
         assertEquals(text, post.getText());
-        assertEquals(post.getAuthorId(), author);
+        assertEquals(post.getPostAuthor(), author);
         assertEquals(post.getSlug(), slug);
         assertEquals(post.getNoteCount(), note_count);
     }
